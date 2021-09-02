@@ -4,5 +4,10 @@
 
 int main(void)
 {
-  return 0;
+  long nc = 0;
+
+  while (getchar() != EOF)
+    ++nc;
+
+  printf("%ld\n", nc);
 }
