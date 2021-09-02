@@ -3,7 +3,7 @@
 /* print fahrenheit-celsius table
    for fah = 0, 20, ..., 300; floating-point version */
 
-main()
+int main(void)
 {
   float fah, cel;
   int lower, upper, step;

@@ -6,7 +6,7 @@
 
 /*print Fahrenheit-Celsius table */
 
-main()
+int main(void)
 {
   for (int fah = LOWER; fah <= UPPER; fah += STEP)
     printf("%3d\t%6.1f\n", fah, (5.0 / 9.0) * (fah - 32));

@@ -3,7 +3,7 @@
 /* print fahrenheit-celsius table
    for fah = 0, 20, ..., 300 */
 
-main()
+int main(void)
 {
   int fah, cel, lower, upper, step;
 
