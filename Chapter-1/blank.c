@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* replaces one or more blanks by a single blank */
+
 int main(void)
 {
   int ch, count;
