@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+/* prints the length of each word on input */
+
 int main(void)
 {
   int c, l;
