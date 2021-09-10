@@ -9,16 +9,15 @@ main()
 
   while ((c = getchar()) != EOF) {
 
-    if (c == ' ') {
-      ++b;
-
-      if (b == 1)
-        putchar(' ');
+    if (c != ' ') {
+      b = 0;
+      putchar(c);
     }
 
     else {
-      b = 0;
-      putchar(c);
+      ++b;
+      if (b == 1)
+        putchar(' ');
     }
   }
 }
