@@ -1,21 +1,20 @@
 #include <stdio.h>
 
-/* prints the length of each word on input */
-
-int main(void)
+/* print the length of each word */
+main()
 {
-  int c, l;
+  int c, l, i;
 
   l = 0;
 
   while ((c = getchar()) != EOF) {
     if (c == ' ' || c == '\t' || c == '\n') {
-      printf(" - %d\n", l);
+      for (i = 0; i < l; ++i)
+        printf("#");
+      printf("\n");
       l = 0;
     }
-    else {
-      putchar(c);
+    else
       ++l;
-    }
   }
 }
