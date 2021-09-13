@@ -12,7 +12,7 @@ main()
   upper = 300;   /* upper limit */
   step = 20;     /* step size */
 
-  printf("fahrenheit\tcelsius\n");
+  printf("fahr\t\tcelsius\n");
 
   for (fahr = lower; fahr <= upper; fahr += step) {
     celsius = (5.0 / 9.0) * (fahr - 32.0);
