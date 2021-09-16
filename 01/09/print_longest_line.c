@@ -23,12 +23,14 @@ int main()
     printf("length: %d\n", curr_len);
   }
 
-  if (longest_len > 0)      /* if there was a line */
-    printf("longest line:\n%s", longest);
+  // if there was a line
+  if (longest_len > 0)
+    printf("longest: %d\nline: %s", longest_len, longest);
 
   return 0;
 }
 
+// read a line, return its length
 int get_line(char line[], int maxline)
 {
   int c, i;
@@ -46,6 +48,7 @@ int get_line(char line[], int maxline)
   return i;
 }
 
+// copy 'from' into 'to'
 void copy(char from[], char to[])
 {
   int i = 0;
