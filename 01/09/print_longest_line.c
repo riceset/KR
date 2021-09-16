@@ -19,7 +19,6 @@ int main()
       longest_len = curr_len;
       copy(curr, longest);
     }
-    
     printf("length: %d\n", curr_len);
   }
 
