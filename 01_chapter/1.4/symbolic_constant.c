@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   celsius_fahrenheit.c                               :+:      :+:    :+:   */
+/*   symbolic_constant.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkomeno <tkomeno@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/03 17:01:49 by tkomeno           #+#    #+#             */
-/*   Updated: 2022/02/03 17:12:53 by tkomeno          ###   ########.fr       */
+/*   Created: 2022/02/03 17:57:30 by tkomeno           #+#    #+#             */
+/*   Updated: 2022/02/03 20:29:39 by tkomeno          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
+#define LOWER_LIMIT 0
+#define UPPER_LIMIT 300
+#define STEP 20
+
 int	main(void)
 {
-	float	fahrenheit;
+	int		fahr;
 	float	celsius;
-	float	lower;
-	float	upper;
-	float	step;
 
-	lower = 0;
-	upper = 300;
-	step = 20;
-	celsius = lower;
-	printf("celsius\tfahr\n");
-	while (celsius <= upper)
+	fahr = LOWER_LIMIT;
+	while (fahr <= UPPER_LIMIT)
 	{
-		fahrenheit = (9.0 / 5.0) * celsius + 32.0;
-		printf("%3.0f\t%5.1f\n", celsius, fahrenheit);
-		celsius += step;
+		celsius = (5.0 / 9.0) * (fahr - 32);
+		printf("%3d %6.1f\n", fahr, celsius);
+		fahr += STEP;
 	}
 	return (0);
 }
